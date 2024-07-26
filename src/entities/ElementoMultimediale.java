@@ -11,14 +11,14 @@ public class ElementoMultimediale {
         this.titolo = titolo;
     }
 
-    public ElementoMultimediale(String titolo, int luminosita, int volume, int durata) {
+    public ElementoMultimediale(String titolo, int volume, int durata, int luminosita) {
         this.titolo = titolo;
-        this.luminosita = luminosita;
         this.volume = volume;
         this.durata = durata;
+        this.luminosita = luminosita;
     }
 
-    public ElementoMultimediale(int durata, int volume, String titolo) {
+    public ElementoMultimediale(String titolo, int volume, int durata) {
         this.durata = durata;
         this.volume = volume;
         this.titolo = titolo;
@@ -32,16 +32,18 @@ public class ElementoMultimediale {
         return luminosita;
     }
 
-    public void setLuminosita(int luminosita) {
+    public int setLuminosita(int luminosita) {
         this.luminosita = luminosita;
+        return luminosita;
     }
 
     public int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    public int setVolume(int volume) {
         this.volume = volume;
+        return volume;
     }
 
     public int getDurata() {
