@@ -10,7 +10,7 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
         super(luminosita, titolo);
     }
 
-    public void mostraAsterisco() {
+    public void show() {
         String asterisco = "";
         for (int i = 0; i < this.getLuminosita(); i++) {
             asterisco += "*";

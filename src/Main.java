@@ -16,7 +16,7 @@ public class Main {
         video1.play();
 
         Immagine immagine1 = new Immagine(5, "immagine1");
-        immagine1.mostraAsterisco();
+        immagine1.show();
 
         ElementoMultimediale[] arrayEM = new ElementoMultimediale[5];
         AggiungiArrayEM(arrayEM);
