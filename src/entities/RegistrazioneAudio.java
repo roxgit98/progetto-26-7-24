@@ -47,4 +47,6 @@ public class RegistrazioneAudio extends ElementoMultimediale implements Play, Vo
         int nuovoValoreVolume = setVolume(Integer.parseInt(scanner.nextLine()));
         System.out.println("il volume attuale è: " + nuovoValoreVolume);
     }
+
+
 }

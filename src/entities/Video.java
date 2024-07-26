@@ -7,6 +7,7 @@ import interfaces.Volume;
 import java.util.Scanner;
 
 public class Video extends ElementoMultimediale implements Play, Volume, Luminosita {
+
     public Video(String titolo, int volume, int durata, int luminosita) {
         super(titolo, volume, durata, luminosita);
     }
@@ -15,11 +16,17 @@ public class Video extends ElementoMultimediale implements Play, Volume, Luminos
     public void play() {
         System.out.println("\n");
         String puntoEsclamativo = "";
+        String asterisco = "";
         for (int i = 0; i < this.getVolume(); i++) {
             puntoEsclamativo += "!";
         }
+
+        for (int i = 0; i < this.getLuminosita(); i++) {
+            asterisco += "*";
+        }
+
         for (int i = 0; i < this.getDurata(); i++) {
-            System.out.println(this.getTitolo() + puntoEsclamativo);
+            System.out.println(this.getTitolo() + puntoEsclamativo + asterisco);
         }
     }
 
